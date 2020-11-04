@@ -73,8 +73,7 @@ public class Main {
                         }
                     } else {
                         if (curr.equals("-") && (prev.equals("") || (isDelimiter(prev) && !prev.equals(")")))) {
-                            // унарный минус
-                            curr = "u-";
+                                                        curr = "u-";
                         } else {
                             while (!stack.isEmpty() && (priority(curr) <= priority(stack.peek()))) {
                                 postfix.add(stack.pop());
